@@ -1,7 +1,9 @@
 [project]
-name = "python-template"
+name = "What's Up?"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "Simple blogging platform."
+authors = ["Sarah Roguy <sarah.rogue@yahoo.com>"]
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "flask",
+]
