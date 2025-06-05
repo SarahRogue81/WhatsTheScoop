@@ -2,7 +2,7 @@
 name = "What's Up?"
 version = "0.1.0"
 description = "Simple blogging platform."
-authors = ["Sarah Roguy <sarah.rogue@yahoo.com>"]
+authors = ["Sarah Rogue <sarah.rogue@yahoo.com>"]
 requires-python = ">=3.11"
 dependencies = [
     "flask",
