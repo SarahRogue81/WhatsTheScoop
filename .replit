@@ -13,3 +13,20 @@ requiredFiles = [".replit", "replit.nix"]
 [deployment]
 run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
+
+[workflows]
+runButton = "WhatsApp"
+
+[[workflows.workflow]]
+name = "WhatsApp"
+mode = "sequential"
+author = 38118141
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flask --app WhatsUp run --debug"
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+exposeLocalhost = true
