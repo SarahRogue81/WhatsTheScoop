@@ -2,8 +2,9 @@
 name = "What's Up?"
 version = "0.1.0"
 description = "Simple blogging platform."
-authors = ["Sarah Rogue <sarah.rogue@yahoo.com>"]
+authors = ["Sarah Rogue <sarah.rogue@outlook.com>"]
 requires-python = ">=3.11"
 dependencies = [
-    "flask",
+    "flask>=4.13.0",
+    "pymongo>=3.1.1",
 ]
