@@ -5,6 +5,6 @@ description = "Simple blogging platform."
 authors = ["Sarah Rogue <sarah.rogue@outlook.com>"]
 requires-python = ">=3.11"
 dependencies = [
-    "flask>=4.13.0",
-    "pymongo>=3.1.1",
+    "flask>=3.1.1",
+    "pymongo>=4.13.0",
 ]

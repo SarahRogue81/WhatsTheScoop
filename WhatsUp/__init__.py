@@ -8,7 +8,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
     app.config.from_mapping(
         SECRET_KEY = os.environ['SECRET_KEY'],
-        DATABASE=os.environ['DATABASE'],
+        DATABASE = os.environ['DATABASE'],
     )
 
     if test_config is None:
@@ -29,4 +29,7 @@ def create_app(test_config=None):
     def hello():
         return 'Hello, World!'
 
+    from . import db
+    db.init_app(app)
+    
     return app

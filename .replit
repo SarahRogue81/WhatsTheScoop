@@ -3,6 +3,7 @@ modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
+packages = ["iproute2"]
 
 [unitTest]
 language = "python3"
@@ -25,6 +26,15 @@ author = 38118141
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "flask --app WhatsUp run --debug"
+
+[[workflows.workflow]]
+name = "Init MongoDB"
+mode = "sequential"
+author = 38118141
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "flask --app WhatsUp init-collections"
 
 [[ports]]
 localPort = 5000
