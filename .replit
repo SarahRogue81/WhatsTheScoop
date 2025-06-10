@@ -3,7 +3,7 @@ modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
-packages = ["iproute2"]
+packages = ["iproute2", "vim"]
 
 [unitTest]
 language = "python3"
