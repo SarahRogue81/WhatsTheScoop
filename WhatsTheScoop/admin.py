@@ -5,7 +5,7 @@ from flask import (
 )
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from WhatsUp.db import get_db
+from WhatsTheScoop.db import get_db
 
 bp = Blueprint('admin', __name__, url_prefix='/admin')
 
