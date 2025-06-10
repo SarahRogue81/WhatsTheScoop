@@ -1,10 +1,10 @@
 [project]
-name = "What's Up?"
-version = "0.1.0"
+name = "What's The Scoop?"
+version = "1.0.0"
 description = "Simple blogging platform."
 authors = ["Sarah Rogue <sarah.rogue@outlook.com>"]
 requires-python = ">=3.11"
 dependencies = [
     "flask>=3.1.1",
-    "pymongo>=4.13.0",
+    "pymongo[srv]>=4.13.0",
 ]
