@@ -16,16 +16,16 @@ run = ["python3", "main.py"]
 deploymentTarget = "cloudrun"
 
 [workflows]
-runButton = "WhatsApp"
+runButton = "WhatsTheScoop"
 
 [[workflows.workflow]]
-name = "WhatsApp"
+name = "WhatsTheScoop"
 mode = "sequential"
 author = 38118141
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "flask --app WhatsUp run --debug"
+args = "flask --app WhatsTheScoop run --debug"
 
 [[workflows.workflow]]
 name = "Init MongoDB"
