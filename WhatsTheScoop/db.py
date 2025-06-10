@@ -1,5 +1,3 @@
-import os
-
 from pymongo import MongoClient
 import click
 from flask import current_app, g
@@ -10,7 +8,7 @@ def get_db():
         g.client = MongoClient(current_app.config['DATABASE'])
     
     if 'db' not in g:
-        g.db = g.client.get_database('WhatsUp')
+        g.db = g.client.get_database('WhatsTheScoop')
 
     return g.db
 

@@ -34,7 +34,7 @@ author = 38118141
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "flask --app WhatsUp init-collections"
+args = "flask --app WhatsTheScoop init-collections"
 
 [[ports]]
 localPort = 5000
