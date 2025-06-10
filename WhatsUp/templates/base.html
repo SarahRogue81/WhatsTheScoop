@@ -5,10 +5,12 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title id="dynamic-title"></title>
-  <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>{% block title %}{% endblock %} - What's Up?</title>
+  <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/5/w3.css">
+  {% block styles %}{% endblock %}
+  {% block scripts %}{% endblock % }
 </head>
 <body>
-  <app-root></app-root>
+  {% block content %}{% endblock %}
 </body>
 </html>
