@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ article.title }}{% endblock %}
+
 {% block head_meta %}
     {% if article.twitter_username %}
         <meta name="twitter:creator" content="@{{ article.twitter_username }}"/>
